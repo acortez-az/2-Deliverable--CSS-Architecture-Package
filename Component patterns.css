@@ -1,0 +1,28 @@
+/* I wanted to make some custom properties that I can revisit later a lot of these are based on tokens from previous assignments. I'm reusing them like legos to help me structure my process*/
+
+:root {
+
+/* Here are some color tokens I think I want */
+
+--color-main: ##3d8c83;
+--color-background: #22252a;
+--color-text-main: #ffffff;
+--color-accent: #ffc814;
+--color-card-cream: #fff9e6;
+
+/* Here are some type tokens I think I want */
+
+--font-size-small: 0.875rem;
+--font-size-base: 1rem;
+--font-size-lg: 1.5rem;
+--font-weight-bold: 700;
+
+/* I'll add some spacing tokens just in case, these are once again from an older assignment */
+
+--space-small: 0.5rem;
+--space-medium: 1rem;
+--space-large: 1.5rem;
+--font-weight-bold: 700;
+
+
+}

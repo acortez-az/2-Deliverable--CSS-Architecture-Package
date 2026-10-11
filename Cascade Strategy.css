@@ -1,0 +1,12 @@
+/* Cascade Strategy */
+
+@layer reset, base, layout, components, utilities, states, overrides, print;
+
+/* I am using https://www.w3schools.com/cssref/atrule_layer.php and https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Cascade_layers as a guide
+
+I will use @layer to manage the importance of layers so there isn't any conflicts over selectors with higher priorities
+we start with the reset and base which contain browser defaults and typography
+then there's the layout which will define important structural grids and page containers
+then there are components which contains reuseable UI things such ass buttons cards and headers.
+Utilities and states will set things such as hover which need to override styling
+and lastly, overrides and print which handle visual changes to improve print layout

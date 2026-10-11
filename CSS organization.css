@@ -2,7 +2,7 @@
 
 /* Imported Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
 /* CSS Reset */
@@ -60,16 +60,21 @@ table {
 
 :root {
 
-/*These will be the primary colors of my capstone website*/
+/*These will be the primary colors of my capstone website, going with some nice calming teal based colors*/
 
 --color-teal-main:#3d8c83;
 --color-teal-light:#5cb2a7;
 --color-teal-dark:#2d6962;
 
-/* Here is the background stuff*/
+/* Here is the background stuff */
 
 --color-bg-dark: #22252a;
 --color-bg-footer: #2a2618;
+
+/* Random text colors, just the basics */
+
+--color-text-main: #333333;
+--color-text-white: #ffffff;
 
 }
 

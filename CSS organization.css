@@ -79,6 +79,19 @@ table {
 }
 
 /* GLOBAL STYLES MOBILE FIRST AKA SMALL*/
+
+body {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-white);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* BASE */
 /* LAYOUT */
 

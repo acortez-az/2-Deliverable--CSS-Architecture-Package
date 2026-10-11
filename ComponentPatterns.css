@@ -1,0 +1,80 @@
+/* at least five styled patterns from your planning package, such as navigation, card, button, callout, form field, table, media object, footer, or resource list.*/
+/* I'm going to put them here so I can plug them into my CSS structure like lego bricks later */
+/* CSS by Antonio Cortez */
+
+:root {
+
+/* Here are some color tokens I think I want */
+
+--color-main: ##3d8c83;
+--color-background: #22252a;
+--color-text-main: #ffffff;
+--color-accent: #ffc814;
+--color-card-cream: #fff9e6;
+--color-focus: #ff0000;
+
+/* Here are some type tokens I think I want */
+
+--font-size-small: 0.875rem;
+--font-size-base: 1rem;
+--font-size-lg: 1.5rem;
+--font-weight-bold: 700;
+
+/* I'll add some spacing tokens just in case, these are once again from an older assignment */
+
+--space-small: 0.5rem;
+--space-medium: 1rem;
+--space-large: 1.5rem;
+--space-xl: 2.5rem;
+
+/* shape tokens, again, just in case */
+
+--radius-small: 8px;
+--radius-medium: 16px;
+
+/* focus tokens, might need this later I'm guessing */
+
+--focus-color: var(var(--color-accent));
+--focus-ring: 3px solid var(var(--color-focus));
+--focus-offset: 2px;
+
+}
+
+/* My first pattern will be a simple button, my tokens are in the other css file so I'll come back to this later with var added*/
+
+.btn {
+    --btn-bg: var(--color-main);
+    --btn-text: #ffffff;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-medium) var(--space-large);
+    font-size: var(--font-size-base);
+    font-weight: bolder;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius-medium);
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: #2d6962;
+}
+
+/* My next pattern will be a simple card component */
+
+.card {
+    --card-bg: var(--color-card-cream, #fff9e6);
+    --card-color: #333333;
+
+    background-color: var(--card-bg);
+    color: var(--card-color);
+    padding: var(--space-large);
+    border-radius: var(--radius-medium);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--color-primary);
+}

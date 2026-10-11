@@ -95,6 +95,23 @@ img {
 /* BASE */
 /* LAYOUT */
 
+.site-header {
+    background-color: var(--color-teal-main);
+    text-align: center;
+    border-bottom: var(--color-teal-dark);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-footer {
+    background-color: var(--color-bg-footer);
+    text-align: center;
+    color: var(--color-text-white);
+}
+
 
 /* Media QUERIES - MEDIUM */
 

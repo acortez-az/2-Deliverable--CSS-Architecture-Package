@@ -58,6 +58,21 @@ table {
 
 /* ROOT */
 
+:root {
+
+/*These will be the primary colors of my capstone website*/
+
+--color-teal-main:#3d8c83;
+--color-teal-light:#5cb2a7;
+--color-teal-dark:#2d6962;
+
+/* Here is the background stuff*/
+
+--color-bg-dark: #22252a;
+--color-bg-footer: #2a2618;
+
+}
+
 /* GLOBAL STYLES MOBILE FIRST AKA SMALL*/
 /* BASE */
 /* LAYOUT */

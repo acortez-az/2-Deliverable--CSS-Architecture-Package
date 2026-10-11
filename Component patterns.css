@@ -9,6 +9,7 @@
 --color-text-main: #ffffff;
 --color-accent: #ffc814;
 --color-card-cream: #fff9e6;
+--color-focus: #ff0000;
 
 /* Here are some type tokens I think I want */
 
@@ -22,7 +23,36 @@
 --space-small: 0.5rem;
 --space-medium: 1rem;
 --space-large: 1.5rem;
---font-weight-bold: 700;
+--space-xl: 2.5rem;
 
+/* shape tokens, again, just in case */
+
+--radius-small: 8px;
+--radius-medium: 16px;
+
+/* focus tokens, might need this later I'm guessing */
+
+--focus-color: var(var(--color-accent));
+--focus-ring: 3px solid var(var(--color-focus));
+--focus-offset: 2px;
 
 }
+
+/* I'm going to choose a .card simple component specific scope. I know my capstone website will contain cards */
+
+.card {
+
+--card-bg: var(var(--color-card-cream));
+--card-color: #333333;
+--card-padding: var(var(--space-large));
+--card-radius: var(var(--space-medium));
+
+background-color: var(--card-bg);
+color: var(--card-color);
+padding: var(--card-padding);
+border-radius: var(--card-radius);
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+
+}
+
+

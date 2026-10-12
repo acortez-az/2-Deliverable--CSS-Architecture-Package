@@ -78,3 +78,58 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     border: 2px solid var(--color-primary);
 }
+
+/* site nav pattern */
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-medium);
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* site callout, I'm not sure if my site should have one, but I'll add one anyways for now */
+
+.callout {
+    background-color: var(--color-accent);
+    padding: var(--space-medium);
+    border-radius: 0 var(--radius-small) var(--radius-small) 0;
+    margin: var(--space-medium) 0;
+    color: #ffffff;
+}
+
+/* same thing with callout, I'm not sure my site will have a form, but I will reuse an old component pattern in this space for now just in case */
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-small);
+    margin-bottom: var(--space-medium);
+}
+
+.form-field label {
+    font-weight: bold;
+    font-size: var(--space-small);
+    color: white;
+}
+
+.form-field input {
+    padding: var(--space-medium);
+    border: 2px solid #cccccc;
+    border-radius: var(--radius-small);
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.form-field input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}

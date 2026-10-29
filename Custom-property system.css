@@ -46,16 +46,9 @@
 
 .card {
 
---card-bg: var(var(--color-card-cream));
---card-color: #333333;
---card-padding: var(var(--space-large));
---card-radius: var(var(--space-medium));
-
-background-color: var(--card-bg);
-color: var(--card-color);
-padding: var(--card-padding);
-border-radius: var(--card-radius);
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);;
+--card-bg: #ffffff;
+--card-border: 2px solid #cbd5e1;
+--card-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 
 }
 

@@ -56,103 +56,75 @@ table {
 	border-spacing: 0;
 }
 
-/* ROOT */
+/* CSS Reset END */
 
-:root {
 
-/*These will be the primary colors of my capstone website, going with some nice calming teal based colors*/
+/* scroll behavior for back to top button */
 
---color-teal-main:#3d8c83;
---color-teal-light:#5cb2a7;
---color-teal-dark:#2d6962;
-
-/* Here is the background stuff */
-
---color-bg-dark: #22252a;
---color-bg-footer: #2a2618;
-
-/* Random text colors, just the basics */
-
---color-text-main: #333333;
---color-text-white: #ffffff;
-
+html {
+    scroll-behavior: smooth;
 }
-
-/* GLOBAL STYLES MOBILE FIRST AKA SMALL*/
 
 body {
-    background-color: var(--color-bg-dark);
-    color: var(--color-text-white);
-    line-height: 1.5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3dccb;
+    color: #333;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+/* My layout */
+
+.top-bar, .green-nav, .main-content, .features-section, .downloads-main-content, .site-footer {
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* BASE */
-/* LAYOUT */
-
-.site-header {
-    background-color: var(--color-teal-main);
-    text-align: center;
-    border-bottom: var(--color-teal-dark);
+.gallery-grid, .features-container, .downloads-card-grid {
+    display: grid;
 }
 
-.main-container {
+/* My utilities */
+.text-center { text-align: center; }
+.d-flex { display: flex; }
+.w-full { width: 100%; }
+
+/* My states  */
+.nav-item:hover, .gallery-card:hover, .feature-card:hover {
+    transform: translateY(-4px);
+}
+
+.nav-toggle:checked ~ .nav-items-container {
     display: flex;
-    flex-direction: column;
 }
 
-.site-footer {
-    background-color: var(--color-bg-footer);
-    text-align: center;
-    color: var(--color-text-white);
+.modal-overlay:target {
+    display: flex;
 }
 
-
-/* Media QUERIES - MEDIUM */
-
-@media (min-width: 768px) {
-    .site-header {
-        text-align: left;
-    }
-
-    .main-container {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+/* My overrides */
+@media (max-width: 768px) {
+    .green-nav {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
 
-/* Media QUERIES - LARGE */
-
-@media (min-width: 1024px) {
-    .main-container {
-        max-width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-/* Media QUERIES - PRINT */
-
-/* I'm not sure how to apply this yet, so I'll use a template */
-
+/* PRINT SUPPORT */
 @media print {
     body {
-        background-color: #ffffff;
-        color: var(--color-text-main);
+        background: #ffffff !important;
+        color: #000000 !important;
     }
-
-    .site-header,
-    .site-footer {
-        display: none;
+    .top-bar, .green-nav, .back-to-top-btn, .modal-overlay, .site-footer {
+        display: none !important;
     }
-
-    .main-container {
-        display: block;
-        padding: 0;
+    .main-content, .downloads-panel {
+        padding: 0 !important;
+        background: none !important;
+        box-shadow: none !important;
+    }
+    a {
+        text-decoration: underline;
+        color: #000000;
     }
 }

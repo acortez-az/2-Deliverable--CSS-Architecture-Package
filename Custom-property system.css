@@ -23,10 +23,9 @@
 
 /* I'll add some spacing tokens just in case, these are once again from an older assignment */
 
---space-small: 0.5rem;
---space-medium: 1rem;
---space-large: 1.5rem;
---space-xl: 2.5rem;
+--spacing-sm: 10px;
+--spacing-md: 20px;
+--spacing-lg: 40px;
 
 /* shape tokens, again, just in case */
 

@@ -37,7 +37,7 @@
 /* focus tokens, might need this later I'm guessing */
 
 --focus-color: var(var(--color-accent));
---focus-ring: 3px solid var(var(--color-focus));
+--focus-ring: 0 0 0 3px rgba(59, 130, 246, 0.5);
 --focus-offset: 2px;
 
 }

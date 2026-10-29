@@ -4,12 +4,14 @@
 
 /* Here are some color tokens I think I want */
 
---color-main: ##3d8c83;
---color-background: #22252a;
---color-text-main: #ffffff;
---color-accent: #ffc814;
---color-card-cream: #fff9e6;
---color-focus: #ff0000;
+--color-bg-cream: #e3dccb;
+--color-bg-main: #008000;
+--color-primary: #3b82f6;
+--color-primary-dark: #1d4ed8;
+--color-accent-red: #ff3b30;
+--color-accent-yellow: #facc15;
+--color-text-dark: #333333;
+--color-text-light: #ffffff;
 
 /* Here are some type tokens I think I want */
 

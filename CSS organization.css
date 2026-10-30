@@ -65,6 +65,8 @@ html {
     scroll-behavior: smooth;
 }
 
+/* END scroll behavior for back to top button */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -102,6 +104,7 @@ body {
 }
 
 /* My overrides */
+
 @media (max-width: 768px) {
     .green-nav {
         flex-direction: column;
@@ -109,7 +112,7 @@ body {
     }
 }
 
-/* PRINT SUPPORT */
+/* PRINT SUPPORT STARTS HERE */
 @media print {
     body {
         background: #ffffff !important;
@@ -128,3 +131,5 @@ body {
         color: #000000;
     }
 }
+
+/* PRINT SUPPORT ENDS HERE */

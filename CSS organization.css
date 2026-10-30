@@ -90,6 +90,11 @@ body {
 .d-flex { display: flex; }
 .w-full { width: 100%; }
 
+a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--color-primary, #3b82f6);
+    outline-offset: 2px;
+}
+
 /* My states  */
 .nav-item:hover, .gallery-card:hover, .feature-card:hover {
     transform: translateY(-4px);
@@ -99,9 +104,15 @@ body {
     display: flex;
 }
 
+.nav-item.current, [aria-current="page"] {
+    font-weight: bold;
+    border-bottom: 3px solid var(--color-accent-yellow, #facc15);
+}
+
 .modal-overlay:target {
     display: flex;
 }
+
 
 /* My overrides */
 

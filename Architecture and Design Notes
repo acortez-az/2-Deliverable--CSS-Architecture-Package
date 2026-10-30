@@ -1,0 +1,14 @@
+* Layer and Cascade Strategy
+By declaring layers, I can prevent specificity conflicts. Styles now flow logically.
+Components are now modular. There are also print overrides.
+
+* Custom Properties and Design Tokens
+Reusing tokens in my design variables will heavily reduce duplication in my cod. Design tokens also work to make global design updates instantaneous. For example, if I want to alter a value, I can simply go to my :root and make changes that automatically change across all components that share the variables.
+
+* Modularity
+
+Clear naming makes components easy to plug into different parts of my HTML structure. Kind of like virtual legos. This makes the site maintainable.
+
+* Browser Testing and Responsiveness
+
+I tested layouts across different viewport widths to verify everything was adaptive. I also made sure that @media print functioned as intended and hid things like the navbar, buttons, etc.

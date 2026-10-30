@@ -1,0 +1,17 @@
+Refactoring Evidence:
+
+1 - Created Design Tokens
+* Before I created Design Tokens:
+COlors were fixed to hex codes and thrown into individual classes
+however, the design tokens now make up for uniform global color changes.
+* After I created Design Tokens:
+All use of color in my CSS are now recurring. Typography is also fixed, and scaling is done uniformly. Shape values are also reusable.
+* Impact:
+This will reduce style duplication and ensure that applying color will only require a single variable! This helps prevent errors and modifying every individual class.
+
+2 - Component Modularization
+* Before I added Component Modularization
+Styles for complex layouts and repeating components were written for specific pages, which bloats my files with code and duplicates.
+* After I added Component Modularization
+Recurring UI elements are now self contained and in modular components that can be reused across the site. Like lego pieces.
+* Impact: This improves code readability, and maintaining the site. Components can now be plugged in directly and built upon like lego pieces.

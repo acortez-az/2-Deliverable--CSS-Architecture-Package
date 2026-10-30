@@ -1,63 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TestHTMLTemplate</title>
-        <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST HTML</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="site-header">
-    <div class="text-center">
-      <h1>Test Game Title</h1>
-      <span class="visually-hidden">Hello World!</span>
-    </div>
-    
-    <nav aria-label="Main Navigation">
-      <ul class="site-nav mt-lg">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Nav 1</a></li>
-        <li><a href="#">Nav 2</a></li>
-        <li><a href="#">Nav 3</a></li>
-      </ul>
+<body id="top">
+
+    <nav class="green-nav">
+        <a href="index.html" class="nav-item current" aria-current="page">Home</a>
+        <a href="#" class="nav-item">Features</a>
+        <a href="#" class="nav-item">Gallery</a>
+        <a href="#buy-modal" class="nav-item">Buy Now!</a>
     </nav>
-  </header>
 
-  <main class="main-container">
+    <main class="main-content" style="padding: 40px 20px; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px;">
+        
+        <h1 class="text-center" style="font-size: var(--font-size-xl); font-weight: bold;">Lorem ipsum dolor sit amet</h1>
+        <p class="text-center">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-    <section>
-        <div class="callout">
-            <strong>Hey!:</strong> Lorum Ipsum Text, but hey here's a callout!
-        </div>
-
-        <div class="card mt-lg">
-            <h2>Featured content here</h2>
-            <p class="mt-lg">A paragraph should go here, lorem ipsum la la la.</p>
-
-            <a href="#" class="btn mt-lg">I would like to put the game trailer here</a>
-        </div>
-    </section>
-
-    <aside>
-        <div class="card">
-            <h3>Newsletter Sign Up Could go here!</h3>
-
-            <form>
-                <div class="form-field mt-lg">
-                <label for="email">Your Email Address</label>
-                <input type="email5" id="email" placeholder="isabelle@nook.com">
+        <div class="feature-card">
+            <div class="card-banner">
+                <h3>Lorem ipsum dolor sit amet </h3>
             </div>
-
-            <button type="submit" class="btn">Submit</button>
-            </form>
+            <div class="card-body">
+                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br>
+                <a href="#buy-modal" style="color: var(--color-primary); text-decoration: none; font-weight: bold;">Lorem ipsum dolor sit amet &rarr;</a>
+            </div>
         </div>
-    </aside>
 
-  </main>
+        <div class="char-profile-card">
+            <div class="char-render-space">
+                <span>Lorem ipsum dolor sit amet</span>
+            </div>
+            <div class="char-info-box">
+                <h3 style="font-size: var(--font-size-lg); font-weight: bold;">Lorem ipsum dolor sit amet</h3>
+                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Nintendo. Game name here test package.</p>
-  </footer>
+    </main>
+
+    <a href="#top" class="back-to-top-btn" aria-label="Back to top">&uarr;</a>
+
+    <div id="buy-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>Lorem ipsum dolor sit ametS</h2>
+            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#" style="align-self: flex-end; padding: 10px 20px; background: var(--color-primary); color: white; text-decoration: none; border-radius: var(--radius-sm);">Close</a>
+        </div>
+    </div>
 
 </body>
 </html>

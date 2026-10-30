@@ -2,134 +2,166 @@
 /* I'm going to put them here so I can plug them into my CSS structure like lego bricks later */
 /* CSS by Antonio Cortez */
 
-:root {
-
-/* Here are some color tokens I think I want */
-
---color-main: ##3d8c83;
---color-background: #22252a;
---color-text-main: #ffffff;
---color-accent: #ffc814;
---color-card-cream: #fff9e6;
---color-focus: #ff0000;
-
-/* Here are some type tokens I think I want */
-
---font-size-small: 0.875rem;
---font-size-base: 1rem;
---font-size-lg: 1.5rem;
---font-weight-bold: 700;
-
-/* I'll add some spacing tokens just in case, these are once again from an older assignment */
-
---space-small: 0.5rem;
---space-medium: 1rem;
---space-large: 1.5rem;
---space-xl: 2.5rem;
-
-/* shape tokens, again, just in case */
-
---radius-small: 8px;
---radius-medium: 16px;
-
-/* focus tokens, might need this later I'm guessing */
-
---focus-color: var(var(--color-accent));
---focus-ring: 3px solid var(var(--color-focus));
---focus-offset: 2px;
-
-}
-
-/* My first pattern will be a simple button, my tokens are in the other css file so I'll come back to this later with var added*/
-
-.btn {
-    --btn-bg: var(--color-main);
-    --btn-text: #ffffff;
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-medium) var(--space-large);
-    font-size: var(--font-size-base);
-    font-weight: bolder;
-    text-decoration: none;
-    border: none;
-    border-radius: var(--radius-medium);
-    background-color: var(--btn-bg);
-    color: var(--btn-text);
-    cursor: pointer;
-    
-}
-
-.btn:hover {
-    background-color: #2d6962;
-}
-
-/* My next pattern will be a simple card component */
-
-.card {
-    --card-bg: var(--color-card-cream, #fff9e6);
-    --card-color: #333333;
-
-    background-color: var(--card-bg);
-    color: var(--card-color);
-    padding: var(--space-large);
-    border-radius: var(--radius-medium);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    border: 2px solid var(--color-primary);
-}
-
-/* site nav pattern */
-
-.site-nav {
+.green-nav {
+    background-color: #2e8b57;
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-medium);
-    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 210px;
+    height: 155px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    transition: transform 0.2s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.08) translateY(-2px);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.feature-card {
+    background-color: #ffffff;
+    border: 3px solid #fef08a;
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-banner {
+    background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 2px solid #93c5fd;
+}
+
+.card-banner h3 {
     margin: 0;
-    padding: 0;
-}
-
-.site-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* site callout, I'm not sure if my site should have one, but I'll add one anyways for now */
-
-.callout {
-    background-color: var(--color-accent);
-    padding: var(--space-medium);
-    border-radius: 0 var(--radius-small) var(--radius-small) 0;
-    margin: var(--space-medium) 0;
+    font-size: 1.2rem;
     color: #ffffff;
 }
 
-/* same thing with callout, I'm not sure my site will have a form, but I will reuse an old component pattern in this space for now just in case */
-
-.form-field {
+.card-body {
+    padding: 15px 20px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: var(--space-small);
-    margin-bottom: var(--space-medium);
+    justify-content: space-between;
 }
 
-.form-field label {
-    font-weight: bold;
-    font-size: var(--space-small);
-    color: white;
+.back-to-top-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+    color: #ffffff;
+    border: 3px solid #fef08a;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.form-field input {
-    padding: var(--space-medium);
-    border: 2px solid #cccccc;
-    border-radius: var(--radius-small);
+.back-to-top-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to bottom, #60a5fa, #2563eb);
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 20px;
+}
+
+.modal-overlay:target {
+    display: flex;
+}
+
+.modal-content {
     background-color: #ffffff;
-    color: #333333;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 35px 30px 35px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.form-field input:focus {
-    outline: none;
-    border-color: var(--color-primary);
+.char-profile-card {
+    background-color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.char-profile-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.char-render-space {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+}
+
+.char-info-box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

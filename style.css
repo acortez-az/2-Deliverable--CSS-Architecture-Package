@@ -1,11 +1,9 @@
-@layer reset, base, layout, components, utilities, states, overrides, print; {
+
 /* CSS by Antonio Cortez */
 
-/* Imported Fonts */
+@layer reset, base, layout, components, utilities, states, overrides, print; {
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-/* MY TOKENS AND OTHER CUSTOM PROPERTIES */
+ /* MY TOKENS AND OTHER CUSTOM PROPERTIES */
 
 @layer base {
     :root {
@@ -45,6 +43,11 @@
     }
 }
 
+/* END OF TOKENS */
+
+/* Imported Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS Reset */
 
@@ -97,7 +100,20 @@ table {
 	border-spacing: 0;
 }
 
+/* CSS Reset END */
+
+/* LAYOUT */
+
+@layer layout {
+    .top-bar, .green-nav, .main-content, .features-section, .downloads-main-content, .site-footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .gallery-grid, .features-container, .downloads-card-grid {
+        display: grid;
+    }
 }
 
-/* CSS Reset END */
+
 

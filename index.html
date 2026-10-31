@@ -6,50 +6,98 @@
     <title>TEST HTML</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="top">
+<body>
+
+    <header id="top" class="top-bar">
+        <div class="w-full d-flex" style="justify-content: space-between; padding: 15px 20px; align-items: center;">
+            <a href="#">
+                <img src="Nintendo.svg.webp" alt="Nintendo Logo" style="height: 30px;">
+            </a>
+        </div>
+    </header>
 
     <nav class="green-nav">
-        <a href="index.html" class="nav-item current" aria-current="page">Home</a>
-        <a href="#" class="nav-item">Features</a>
-        <a href="#" class="nav-item">Gallery</a>
-        <a href="#buy-modal" class="nav-item">Buy Now!</a>
+        <div class="nav-items-container d-flex" style="gap: 15px;">
+            <a href="#" class="nav-item">Downloads</a>
+            <a href="#" class="nav-item current" aria-current="page">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Characters</a>
+            <a href="#" class="nav-item">Gallery</a>
+            <a href="#buy-modal" class="nav-item">Buy Now!</a>
+        </div>
     </nav>
 
-    <main class="main-content" style="padding: 40px 20px; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 30px;">
+    <main class="main-content" style="padding: var(--spacing-lg, 40px); max-width: 1200px; margin: 0 auto;">
+        <h2 class="text-center" style="font-size: var(--font-size-xl, 1.6rem); margin-bottom: var(--spacing-md, 20px);">TEST CAPSTONE SITE TEST</h2>
         
-        <h1 class="text-center" style="font-size: var(--font-size-xl); font-weight: bold;">Lorem ipsum dolor sit amet</h1>
-        <p class="text-center">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        <div class="feature-card">
-            <div class="card-banner">
-                <h3>Lorem ipsum dolor sit amet </h3>
+        <section style="margin-bottom: var(--spacing-lg, 40px);">
+            <div class="char-profile-card">
+                <div class="char-render-space">
+                    <span>3D CHARACTER RENDER</span>
+                </div>
+                <div class="char-info-box">
+                    <h3>Villager</h3>
+                    <p>LORUM IPSUM</p>
+                </div>
             </div>
-            <div class="card-body">
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <br>
-                <a href="#buy-modal" style="color: var(--color-primary); text-decoration: none; font-weight: bold;">Lorem ipsum dolor sit amet &rarr;</a>
-            </div>
-        </div>
-
-        <div class="char-profile-card">
-            <div class="char-render-space">
-                <span>Lorem ipsum dolor sit amet</span>
-            </div>
-            <div class="char-info-box">
-                <h3 style="font-size: var(--font-size-lg); font-weight: bold;">Lorem ipsum dolor sit amet</h3>
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-
+        </section>
     </main>
 
-    <a href="#top" class="back-to-top-btn" aria-label="Back to top">&uarr;</a>
+    <section class="features-section" style="padding: 0 var(--spacing-lg, 40px) var(--spacing-lg, 40px) var(--spacing-lg, 40px);">
+        <div class="features-container" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+            
+            <a href="#" class="feature-card">
+                <div class="card-banner">
+                    <h3>LORUM IPSU</h3>
+                </div>
+                <div class="card-body">
+                    <p>LORUM IPSU.</p>
+                </div>
+            </a>
+
+            <a href="#" class="feature-card">
+                <div class="card-banner">
+                    <h3>LORUM IPSU</h3>
+                </div>
+                <div class="card-body">
+                    <p>LORUM IPSU.</p>
+                </div>
+            </a>
+
+            <a href="#" class="feature-card">
+                <div class="card-banner">
+                    <h3>LORUM IPSU</h3>
+                </div>
+                <div class="card-body">
+                    <p>LORUM IPSU.</p>
+                </div>
+            </a>
+
+            <a href="#" class="feature-card">
+                <div class="card-banner">
+                    <h3>LORUM IPSU</h3>
+                </div>
+                <div class="card-body">
+                    <p>LORUM IPSU.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer" style="background: var(--color-text-dark, #333333); color: var(--color-text-light, #ffffff); padding: 30px; text-align: center;">
+        <p>&copy; 2013 Nintendo.</p>
+    </footer>
+
+    <a href="#top" class="back-to-top-btn" aria-label="Back to top">▲</a>
+
+    /* Modal POPUP STUFF */
 
     <div id="buy-modal" class="modal-overlay">
         <div class="modal-content">
-            <h2>Lorem ipsum dolor sit ametS</h2>
-            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <a href="#" style="align-self: flex-end; padding: 10px 20px; background: var(--color-primary); color: white; text-decoration: none; border-radius: var(--radius-sm);">Close</a>
+            <a href="#" class="modal-close" aria-label="Close" style="position: absolute; top: 15px; right: 20px; font-size: 1.5rem; text-decoration: none; color: #333;">&times;</a>
+            <h3>Buy Now!</h3>
+            <p>LORUM IPSUM .</p>
+            <a href="#" style="color: var(--color-primary); font-weight: bold;">Close Modal</a>
         </div>
     </div>
 

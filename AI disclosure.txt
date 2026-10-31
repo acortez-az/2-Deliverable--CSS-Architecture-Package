@@ -1,0 +1,1 @@
+I did use CHATGPT to help me come up with names for my tokens and I used it to assist me with organizing my CSS layout. I also used it to assist me with coming up with a very simple and basic HTML starter page for the sake of testing my CSS, if that is okay. Behavior is the browser was tested manually by me in Firefox. 

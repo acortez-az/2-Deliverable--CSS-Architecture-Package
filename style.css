@@ -239,7 +239,8 @@ table {
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .char-render-space {
+
+    .char-render-space { /* char is short for "character" this will be spaces for cute little character 3D renders*/
         width: 140px;
         height: 140px;
         flex-shrink: 0;
